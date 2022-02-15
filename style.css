@@ -1,0 +1,55 @@
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  margin: 0;
+}
+
+section,
+nav {
+  padding: 1rem;
+}
+
+section > div.row {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section:nth-child(2n + 1) {
+  background: linear-gradient(270deg, #00602c, #1f8226);
+}
+section:nth-child(4n + 1) {
+  background: linear-gradient(90deg, #00602c, #1f8226);
+}
+
+nav > ul {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: block;
+  margin: 0 1rem;
+}
+
+nav > ul > li:last-of-type {
+  margin-right: 0;
+}
+
+nav > ul > li:first-of-type {
+  margin-left: 0;
+}
+
+nav > ul > li.logo {
+  flex: 1;
+}
+
+@media screen and (min-width: 1200px) {
+  section,
+  nav {
+    padding: 5rem;
+  }
+}
